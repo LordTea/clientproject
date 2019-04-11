@@ -1,0 +1,15 @@
+
+
+
+
+
+/*Bootstrap classes*/
+.btn-group {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+}
