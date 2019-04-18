@@ -1,8 +1,6 @@
 
 
 
-
-
 /*Bootstrap classes*/
 .btn-group {
     display: flex;
@@ -12,4 +10,5 @@
 img {
     display: flex;
     justify-content: center;
+    
 }

@@ -3,19 +3,21 @@
   <head>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css" />
   
   <meta charset="UTF-8">
   <title>Music Client Project</title>
+  
+  <script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
   </head>
   
   <body>
     <div class="container">
+      
+      <!--Audio--->
+      <audio controls autoplay class="invisible">
+        <source src="" type="audio/mpeg">
+      </audio>
       
       <!--Top header-->
       <div class="jumbotron">
@@ -29,23 +31,23 @@
       
       <!--Seach bar-->
       <div class="text-center">
-        <input type="text" placeholder="Search for a song.">
+        <input id="input" type="text" placeholder="Search for a song.">
       </div>
       
       <br>
       <!--Search + Random Button-->
       <div class="row text-center">
-        <button type="button" class="btn btn-primary btn-lg">
+        <button id="search-btn" type="button" class="btn btn-primary btn-lg">
           <span class="glyphicon glyphicon-search"></span> Search
         </button>
-        <button type="button" class="btn btn-danger btn-lg">
+        <button id="random-btn" type="button" class="btn btn-danger btn-lg">
           <span class="glyphicon glyphicon-random"></span> Random
         </button>
       </div>
       
       <br>
       <!--Image-->
-      <div class="text-center">
+      <div id="image" class="text-center">
         <img src="https://blog.teamtreehouse.com/wp-content/uploads/2015/05/InternetSlowdown_Day.gif" class="img-thumbnail">
       </div>
       
@@ -67,5 +69,10 @@
       
       
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"> </script>
   </body>
 </html>
