@@ -42,10 +42,7 @@ $("#search-btn").click(function(){
     method: "GET",
     success: function(response){
       songindex = 0;
-      $("#image").html("<img src='"+response[songindex].artwork_url+"'class='img-thumbnail'>")
-      if (response[songindex].artwork_url == null){
-        $("#image").html("<img src='https://www.nasselquistjewellers.com/static/images/temp-inventory-landing.jpg' class='img-thumbnail'>")
-      }
+      $("#image").html("<iframe width='100%' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+response[songindex].id+"&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe>")
       
       $("#title").html("<p class='text-center'>"+response[songindex].title+"</p>")
       
@@ -61,10 +58,7 @@ $("#random-btn").click(function(){
     success: function(response){
       var length = response.length;
       songindex = Math.floor(Math.random() * length);
-      $("#image").html("<img src='"+response[songindex].artwork_url+"'class='img-thumbnail'>")
-      if (response[songindex].artwork_url == null){
-        $("#image").html("<img src='https://www.nasselquistjewellers.com/static/images/temp-inventory-landing.jpg' class='img-thumbnail'>")
-      }
+      $("#image").html("<iframe width='100%' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+response[songindex].id+"&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe>")
       
       $("#title").html("<p class='text-center'>"+response[songindex].title+"</p>")
     
@@ -81,10 +75,7 @@ $("#forward").click(function(){
     method: "GET",
     success: function(response){
       songindex = songindex+1;
-      $("#image").html("<img src='"+response[songindex].artwork_url+"'class='img-thumbnail'>")
-      if (response[songindex].artwork_url == null){
-        $("#image").html("<img src='https://www.nasselquistjewellers.com/static/images/temp-inventory-landing.jpg' class='img-thumbnail'>")
-      }
+      $("#image").html("<iframe width='100%' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+response[songindex].id+"&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe>")
       
       $("#title").html("<p class='text-center'>"+response[songindex].title+"</p>")
     
@@ -101,10 +92,7 @@ $("#backward").click(function(){
     method: "GET",
     success: function(response){
       songindex = songindex-1;
-      $("#image").html("<img src='"+response[songindex].artwork_url+"'class='img-thumbnail'>")
-      if (response[songindex].artwork_url == null){
-        $("#image").html("<img src='https://www.nasselquistjewellers.com/static/images/temp-inventory-landing.jpg' class='img-thumbnail'>")
-      }
+      $("#image").html("<iframe width='100%' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/"+response[songindex].id+"&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe>")
       
       $("#title").html("<p class='text-center'>"+response[songindex].title+"</p>")
     
